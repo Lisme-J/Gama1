@@ -1,0 +1,33 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Introduce la primera nota: ");
+        double nota1 = double.Parse(Console.ReadLine());
+
+        Console.Write("Introduce la segunda nota: ");
+        double nota2 = double.Parse(Console.ReadLine());
+
+        Console.Write("Introduce la tercera nota: ");
+        double nota3 = double.Parse(Console.ReadLine());
+
+        Console.Write("Introduce la cuarta nota: ");
+        double nota4 = double.Parse(Console.ReadLine());
+
+        double promedio = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        Console.WriteLine($"El promedio de las notas es: {promedio:F2}");
+
+        if (promedio >= 70)
+        {
+            Console.WriteLine("¡Felicidades! Has aprobado.");
+        }
+        else
+        {
+            Console.WriteLine("Lo siento, has reprobado.");
+        }
+    }
+}
+
