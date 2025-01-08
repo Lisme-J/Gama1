@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese la cantidad de artículos: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        Console.Write("Ingrese el precio por artículo: ");
+        double precio = double.Parse(Console.ReadLine());
+
+        double importe = cantidad * precio;
+
+        double itbis = importe * 0.18;
+
+        double descuento = importe * 0.10;
+
+        double totalGeneral = (importe - descuento) + itbis;
+
+        Console.WriteLine($"\nImporte total: {importe:C}");
+        Console.WriteLine($"ITBIS (18%): {itbis:C}");
+        Console.WriteLine($"Descuento (10%): {descuento:C}");
+        Console.WriteLine($"Total General: {totalGeneral:C}");
+    }
+}
+
