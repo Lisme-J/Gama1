@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double suma = 0;
+
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.Write($"Ingrese el número {i}: ");
+            double numero = double.Parse(Console.ReadLine());
+            suma += numero; 
+        }
+
+        double promedio = suma / 5;
+
+        Console.WriteLine($"\nEl promedio de los 5 números es: {promedio:F2}");
+    }
+}
