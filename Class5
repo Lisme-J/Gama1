@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Leer la cantidad de artículos
+        Console.Write("Ingrese la cantidad de artículos: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        // Leer el precio por artículo
+        Console.Write("Ingrese el precio por artículo: ");
+        double precio = double.Parse(Console.ReadLine());
+
+        // Calcular el importe total
+        double importeTotal = cantidad * precio;
+
+        // Mostrar el resultado
+        Console.WriteLine($"\nEl importe total de la compra es: {importeTotal:C}");
+    }
+}
