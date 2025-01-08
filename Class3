@@ -1,0 +1,39 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese el primer número: ");
+        double num1 = double.Parse(Console.ReadLine());
+
+        Console.Write("Ingrese el segundo número: ");
+        double num2 = double.Parse(Console.ReadLine());
+
+        Console.Write("Ingrese el tercer número: ");
+        double num3 = double.Parse(Console.ReadLine());
+
+        double suma = num1 + num2 + num3;
+        double resta = num1 - num2 - num3;
+        double multiplicacion = num1 * num2 * num3;
+        double division = 0;
+
+        if (num2 != 0 && num3 != 0)
+        {
+            division = num1 / num2 / num3;
+        }
+        else
+        {
+            Console.WriteLine("No se puede dividir por cero.");
+        }
+
+        Console.WriteLine($"\nResultado de la suma: {num1} + {num2} + {num3} = {suma}");
+        Console.WriteLine($"Resultado de la resta: {num1} - {num2} - {num3} = {resta}");
+        Console.WriteLine($"Resultado de la multiplicación: {num1} * {num2} * {num3} = {multiplicacion}");
+
+        if (num2 != 0 && num3 != 0)
+        {
+            Console.WriteLine($"Resultado de la división: {num1} / {num2} / {num3} = {division}");
+        }
+    }
+}
